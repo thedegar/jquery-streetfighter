@@ -1,52 +1,134 @@
 body {
 	background-color: black;
 }
-
+ 
 .main {
 	background-color: white;
 	margin-top: 110px;
-	padding-left: 100px;
 	min-width: 1200px;
+	padding-left: 100px;
 	height: 500px;
+}
+ 
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .thinkful, .jquery, .streetfighter, .ryu-roll {
+	background-repeat: no-repeat;
+} 
+  
+.hadouken {
+	background-image: url('../images/hadouken.gif');
+	width: 156px; 
+	height: 90px;
+	display: none;
+	float: left;
+	position: relative;
+	top: 170px;
+	left: -180px;
+} 
+
+.streetfighter, .jquery, .thinkful {
+	float: right;
+	display: none;
+	position: absolute;
+}
+
+.streetfighter {
+	width: 317px;
+	height: 159px;
+	right: 176px;
+	top: 400px;	
+}
+
+.jquery {
+	width: 418px;
+	height: 102px;
+	right: 141px;
+	top: 274px;	
+}
+
+.thinkful {
+	width: 272px;
+	height: 136px;
+	right: 200px;
+	top: 116px;	
+}
+
+.ryu-roll {
+	width: 245px;
+	height: 164px;
+	position: absolute;
+	float: left;
+	display: none;
+	left: 220px;
+	top: 260px;	
+}
+
+.text1, .text2, .text3 {
+	width: 451px;
+	height: 150px;
+	float: right;
+	display: none;
+	position: absolute;
+	font-size: 50px;
+	font-family: "Comic Sans MS";
+}
+
+.text1 {
+	right: 245px;
+	top: 150px;	
+}
+
+.text2 {
+	right: 190px;
+	top: 350px;	
+}
+
+.text3 {
+	right: 10px;
+	top: 490px;	
+	width: 550px;
 }
 
 .ryu {
 	float: left;
 }
-
-.ryu-ready, .ryu-still, .ryu-throwing {
+ 
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
 	width: 659px;
 	height: 494px;
 }
-
-.ryu-ready, .ryu-throwing {
+ 
+.ryu-ready, .ryu-throwing, .ryu-cool {
 	display: none;
-}
-
+} 
+ 
 .ryu-ready {
 	background-image: url('../images/ryu-ready-position.gif');
 }
-
+ 
 .ryu-still {
 	background-image: url('../images/ryu-standing-still.png');
 }
-
+ 
 .ryu-throwing {
 	background-image: url('../images/ryu-throwing-hadouken.png');
 }
 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
-	background-repeat: no-repeat;
+.ryu-cool {
+	background-image: url('../images/ryu-cool.gif');
 }
 
-.hadouken {
-	background-image: url('../images/hadouken.gif');
-	width: 156px;
-	height: 90px;
-	display: none;
-	float: left;
-	position: relative;
-	left: 480px;
-	top: 170px;
+.ryu-roll {
+	background-image: url('../images/ryu-roll.gif');
 }
 
+.jquery {
+	background-image: url('../images/jquery-logo.jpeg');
+}
+
+.streetfighter {
+	background-image: url('../images/logo.jpeg');
+}
+
+.thinkful {
+	background-image: url('../images/thinkful.jpeg');
+}
