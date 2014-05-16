@@ -16,7 +16,6 @@ $(document).ready(function() {
 		$('.jquery').hide();
 		$('.streetfighter').hide();
 		$('.text1').fadeIn(3000);
-		$('.text2').fadeIn(3000);
 	})
 	.mouseleave(function() {
 		$('.ryu-ready').hide();
@@ -39,6 +38,7 @@ $(document).ready(function() {
 	.mouseup(function() {
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
+		$('.text2').fadeIn(3000);
 	});
 
 	$(document).keydown(function(x) {
@@ -52,6 +52,22 @@ $(document).ready(function() {
 	.keyup(function(x) {
 		if (x.which == 88) {
 			$('.ryu-cool').hide();
+			$('.ryu-still').show();
+			$('.text3').fadeIn(3000);
+		}
+	})
+	.keydown(function(r) {
+		if (r.which == 82) {
+			$('.ryu-ready').hide();
+			$('.ryu-still').hide();
+			$('.ryu-throwing').hide();
+			$('.ryu-cool').hide();
+			$('.ryu-roll').fadeIn();
+		}
+	})
+	.keyup(function(r) {
+		if (r.which == 82) {
+			$('.ryu-roll').hide();
 			$('.ryu-still').show();
 		}
 	})

@@ -10,7 +10,7 @@ body {
 	height: 500px;
 }
  
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .thinkful, .jquery, .streetfighter, .ryu-roll {
 	background-repeat: no-repeat;
 } 
   
@@ -52,9 +52,19 @@ body {
 	top: 116px;	
 }
 
-.text1, .text2 {
+.ryu-roll {
+	width: 245px;
+	height: 164px;
+	position: absolute;
+	float: left;
+	display: none;
+	left: 220px;
+	top: 260px;	
+}
+
+.text1, .text2, .text3 {
 	width: 451px;
-	height: 250px;
+	height: 150px;
 	float: right;
 	display: none;
 	position: absolute;
@@ -68,8 +78,14 @@ body {
 }
 
 .text2 {
-	right: 100px;
-	top: 400px;	
+	right: 190px;
+	top: 350px;	
+}
+
+.text3 {
+	right: 10px;
+	top: 490px;	
+	width: 550px;
 }
 
 .ryu {
@@ -99,6 +115,10 @@ body {
 
 .ryu-cool {
 	background-image: url('../images/ryu-cool.gif');
+}
+
+.ryu-roll {
+	background-image: url('../images/ryu-roll.gif');
 }
 
 .jquery {
