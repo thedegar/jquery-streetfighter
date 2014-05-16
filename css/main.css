@@ -24,17 +24,64 @@ body {
 	top: 170px;
 	left: -180px;
 } 
- 
+
+.streetfighter, .jquery, .thinkful {
+	float: right;
+	display: none;
+	position: absolute;
+}
+
+.streetfighter {
+	width: 317px;
+	height: 159px;
+	right: 176px;
+	top: 400px;	
+}
+
+.jquery {
+	width: 418px;
+	height: 102px;
+	right: 141px;
+	top: 274px;	
+}
+
+.thinkful {
+	width: 272px;
+	height: 136px;
+	right: 200px;
+	top: 116px;	
+}
+
+.text1, .text2 {
+	width: 451px;
+	height: 250px;
+	float: right;
+	display: none;
+	position: absolute;
+	font-size: 50px;
+	font-family: "Comic Sans MS";
+}
+
+.text1 {
+	right: 245px;
+	top: 150px;	
+}
+
+.text2 {
+	right: 100px;
+	top: 400px;	
+}
+
 .ryu {
 	float: left;
 }
  
-.ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
 	width: 659px;
 	height: 494px;
 }
  
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool {
 	display: none;
 } 
  
@@ -50,3 +97,18 @@ body {
 	background-image: url('../images/ryu-throwing-hadouken.png');
 }
 
+.ryu-cool {
+	background-image: url('../images/ryu-cool.gif');
+}
+
+.jquery {
+	background-image: url('../images/jquery-logo.jpeg');
+}
+
+.streetfighter {
+	background-image: url('../images/logo.jpeg');
+}
+
+.thinkful {
+	background-image: url('../images/thinkful.jpeg');
+}
