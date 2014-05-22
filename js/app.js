@@ -23,7 +23,7 @@ $(document).ready(function() {
 	//Hide all other images, show Ready + text1
 	function ryuReady () {
 		console.log("RyuReady");
-		$('.ryu-still').hide();
+		HideRyu();
 		$('.ryu-ready').show();
 		$('.thinkful').hide();
 		$('.jquery').hide();
@@ -35,7 +35,7 @@ $(document).ready(function() {
 	//Hide Ready, Show Throwing + Hadouken + sound
 	function fireHadouken () {
 		playHadouken();
-		$('.ryu *').hide();
+		HideRyu();
 		$('.ryu-throwing').show();
 		$('.hadouken').finish().show()
 		.animate(
@@ -73,6 +73,7 @@ $(document).ready(function() {
 		console.log("Rickstart");
 		playRoll();
 		HideRyu();
+		$('.hadouken').hide();
 		$('.ryu-roll').show();
 	}
 
